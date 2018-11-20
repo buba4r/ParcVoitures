@@ -4,6 +4,10 @@ import voiture.impl.*;
 
 public class programme {
 
+  /**
+   * 
+   * @param args
+   */
   public static void main(String[] args) {
 
     int nbVoitures = 0;

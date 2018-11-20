@@ -13,7 +13,7 @@ import voiture.impl.Voiture;
  * @author Boubacar
  *
  */
-public class FactoryVoiture extends Voiture {
+public class FactoryVoiture {
 
   private final int nbPneu = 4;
   static int nbVoiture = 0;
@@ -30,7 +30,7 @@ public class FactoryVoiture extends Voiture {
  * @return
  */
   public Voiture creerVoiture(String marque, String model, int numeroSerie,
-      String marquePneu, double largeur,double hauteur, boolean isHiver) {
+      double largeur,double hauteur,  String marquePneu, boolean isHiver) {
 
     Moteur moteur = new Moteur(numeroSerie);
     Voiture voiture = new Voiture();

@@ -11,15 +11,14 @@ import org.jdom2.input.SAXBuilder;
 import voiture.impl.*;
 
 /**
- * FactoryXml permet de d'ecrire une voiture a partir
- * d'un fichier xml.
+ * FactoryXml permet de d'ecrire une voiture a partir d'un fichier xml.
+ * 
  * @author Boubacar
  *
  */
 public class FactoryXml {
 
   List<Voiture> voitures;
-  Voiture voiture ;
   FactoryVoiture factoryVoiture;
   private String model;
   private String marque;
@@ -29,16 +28,14 @@ public class FactoryXml {
    */
   public FactoryXml() {
     voitures = new ArrayList<>();
-    voiture = new Voiture();
     factoryVoiture = new FactoryVoiture();
   }
-  
 
   /**
    * 
    * @param fichier
    */
-  public Voiture parseXml(String fichier) {
+  public List<Voiture> parseXml(String fichier) {
 
     /* Création du parseur */
     SAXBuilder builder = new SAXBuilder();
@@ -66,7 +63,7 @@ public class FactoryXml {
         marqueVoiture = evoiture.getChild("marque").getText();
         modeleVoiture = evoiture.getChild("modele").getText();
         numeroSerie = evoiture.getChild("moteur").getText();
-        
+
         /* Récupération de tous les attributs du pneu */
         List<Element> pneux = evoiture.getChildren("pneu");
         for (Element eattribut : pneux) {
@@ -76,16 +73,16 @@ public class FactoryXml {
           marquePneu = eattribut.getChildText("marque");
         }
 
-        Voiture voiture = factoryVoiture.creerVoiture(marque, model,
-            Integer.parseInt(numeroSerie), marquePneu,
-            Integer.parseInt(largeur), Double.parseDouble(hauteur), true);
+        Voiture voiture = factoryVoiture.creerVoiture(marqueVoiture, modeleVoiture,
+            Integer.parseInt(numeroSerie),Double.parseDouble(largeur), Double.parseDouble(hauteur),
+            marquePneu, true);
         voitures.add(voiture);
-       
+
       }
     } catch (Exception e) {
       e.printStackTrace();
     }
-    return factoryVoiture;
+    return voitures;
   }
 
   public FactoryVoiture getFactoryVoiture() {

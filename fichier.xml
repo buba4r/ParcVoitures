@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <voitures>
   <voiture>
-    <marque>Ferari</marque>
-    <modele>model1</modele>
+    <marque>audi</marque>
+    <modele>A3</modele>
     <moteur>939939</moteur>
     <pneu>
       <largeur>10</largeur>

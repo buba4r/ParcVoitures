@@ -15,74 +15,85 @@ package voiture.impl;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Voiture  {
+import visiteur.ElementVisitableVoiture;
+import visiteur.Visiteur;
+import visiteur.VisiteurVoiture;
 
-	protected static final String MARQUE_EDEFAULT = null;
-	protected String marque = MARQUE_EDEFAULT;
+public class Voiture implements ElementVisitableVoiture {
 
-	protected static final String MODELE_EDEFAULT = null;
-	protected String modele = MODELE_EDEFAULT;
+  protected static final String MARQUE_EDEFAULT = null;
+  protected String marque = MARQUE_EDEFAULT;
 
-	// le moteur de la voiture
-	protected Moteur moteur;
-	// les pneus de la voiture
-	protected List<Pneu> pneus;
+  protected static final String MODELE_EDEFAULT = null;
+  protected String modele = MODELE_EDEFAULT;
 
-	public Voiture() {
-		super();
-		pneus = new ArrayList<Pneu>();
-	}
-	
-	public String getMarque() {
-		return marque;
-	}
+  // le moteur de la voiture
+  protected Moteur moteur;
+  // les pneus de la voiture
+  protected List<Pneu> pneus;
 
-	public void setMarque(String newMarque) {
-		marque = newMarque;
-	}
+  public Voiture() {
+    super();
+    pneus = new ArrayList<Pneu>();
+  }
 
-	public String getModele() {
-		return modele;
-	}
+  public String getMarque() {
+    return marque;
+  }
 
-	public void setModele(String newModele) {
-		modele = newModele;
-	}
+  public void setMarque(String newMarque) {
+    marque = newMarque;
+  }
 
-	public Moteur getMoteur() {
-		return moteur;
-	}
+  public String getModele() {
+    return modele;
+  }
 
-	public void setMoteur(Moteur newMoteur) {
-		moteur = newMoteur;
-	}
+  public void setModele(String newModele) {
+    modele = newModele;
+  }
 
-	public List<Pneu> getPneus() {
-		return pneus;
-	}
-	
-	public void setPneus(List<Pneu> pneus) {
-		this.pneus = pneus;
-	}
-	
-	public void setPneu(Pneu pneu) {
-		this.pneus.add(pneu);
-	}
+  public Moteur getMoteur() {
+    return moteur;
+  }
 
-	public String toString() {
+  public void setMoteur(Moteur newMoteur) {
+    moteur = newMoteur;
+  }
 
-		StringBuffer result = new StringBuffer("voiture : ");
-		result.append("marque ");
-		result.append(marque);
-		result.append(", modele ");
-		result.append(modele);
-		
-		result.append(", "+moteur.toString());
-		
-		for (Pneu pneu : pneus) {
-			result.append(", "+pneu.toString());
-		}
-		return result.toString();
-	}
+  public List<Pneu> getPneus() {
+    return pneus;
+  }
 
-} //VoitureImpl
+  public void setPneus(List<Pneu> pneus) {
+    this.pneus = pneus;
+  }
+
+  public void setPneu(Pneu pneu) {
+    this.pneus.add(pneu);
+  }
+  /**
+   * @return
+   */
+  public String toString() {
+
+    StringBuffer result = new StringBuffer("voiture : ");
+    result.append("marque ");
+    result.append(marque);
+    result.append(", modele ");
+    result.append(modele);
+
+    result.append(", " + moteur.toString());
+
+    for (Pneu pneu : pneus) {
+      result.append(", " + pneu.toString());
+    }
+    return result.toString();
+  }
+
+  public void applique(Visiteur unvisiteur) {
+    unvisiteur.agitSur(this);
+    
+  }
+
+} // VoitureImpl

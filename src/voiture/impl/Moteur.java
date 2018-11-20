@@ -12,7 +12,10 @@
 
 package voiture.impl;
 
-public class Moteur {
+import visiteur.ElementVisitableVoiture;
+import visiteur.Visiteur;
+
+public class Moteur implements ElementVisitableVoiture{
 
   protected static final int NUMERO_SERIE_EDEFAULT = 0;
   protected int numeroSerie = NUMERO_SERIE_EDEFAULT;
@@ -41,6 +44,11 @@ public class Moteur {
     result.append("numeroSerie: ");
     result.append(numeroSerie);
     return result.toString();
+  }
+  
+  public void applique(Visiteur unvisiteur) {
+    unvisiteur.agitSur(this);
+    
   }
 
 } // Moteur

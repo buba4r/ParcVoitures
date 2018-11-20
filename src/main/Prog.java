@@ -2,6 +2,8 @@ package main;
 
 import visiteur.VisiteurVoiture;
 import voiture.factory.FactoryVoiture;
+import voiture.impl.Moteur;
+import voiture.impl.Pneu;
 import voiture.impl.Voiture;
 
 public class Prog {
@@ -14,6 +16,8 @@ public class Prog {
   public static void main(String[] args) {
 
     Voiture voiture = new Voiture();
+    Moteur moteur = new Moteur();
+    Pneu pneu = new Pneu();
     
     VisiteurVoiture visiteur = new VisiteurVoiture();
     FactoryVoiture vfac = new FactoryVoiture();
@@ -21,6 +25,9 @@ public class Prog {
     voiture = vfac.creerVoiture("peugeot", "208", 345645, 2.0, 1.0, "Michelin", false);
     
     voiture.applique(visiteur);
+    //moteur.applique(visiteur);
+    //pneu.applique(visiteur);
+    
     
     System.out.println("le nombres Voitures créérs est: => " + visiteur.nombreVoiture());
 

@@ -12,7 +12,10 @@
 
 package voiture.impl;
 
-public class Pneu {
+import visiteur.ElementVisitableVoiture;
+import visiteur.Visiteur;
+
+public class Pneu implements ElementVisitableVoiture {
 
   protected static final double LARGEUR_EDEFAULT = 0.0;
   protected double largeur = LARGEUR_EDEFAULT;
@@ -75,6 +78,11 @@ public class Pneu {
     result.append(marque);
     result.append(')');
     return result.toString();
+  }
+  
+  public void applique(Visiteur unvisiteur) {
+    unvisiteur.agitSur(this);
+    
   }
 
 } // Pneu

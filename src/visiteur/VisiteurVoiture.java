@@ -1,5 +1,7 @@
 package visiteur;
 
+import voiture.impl.Moteur;
+import voiture.impl.Pneu;
 import voiture.impl.Voiture;
 
 public class VisiteurVoiture implements Visiteur {
@@ -17,6 +19,21 @@ public class VisiteurVoiture implements Visiteur {
     System.out.println("Pneu: " + vh.getPneus());
 
     nombresVoitures++;
+
+  }
+
+  @Override
+  public void agitSur(Pneu unPneu) {
+    if (unPneu == null) {
+      throw new NullPointerException();
+    }
+    System.out.println("Pneu: " + unPneu.toString());
+
+  }
+
+  @Override
+  public void agitSur(Moteur unMoteur) {
+    System.out.println("Moteur: " + unMoteur.getNumeroSerie());
 
   }
 

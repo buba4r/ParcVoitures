@@ -3,7 +3,7 @@
   <voiture>
     <marque>audi</marque>
     <modele>A3</modele>
-    <moteur>939939</moteur>
+    <moteur>38475</moteur>
     <pneu>
       <largeur>10</largeur>
       <hiver>false</hiver>
@@ -31,66 +31,8 @@
   </voiture>
     <voiture>
     <marque>Ferari</marque>
-    <modele>model1</modele>
-    <moteur>939939</moteur>
-    <pneu>
-      <largeur>10</largeur>
-      <hiver>false</hiver>
-      <hauteur>2</hauteur>
-      <marque>michlein</marque>
-    </pneu>
-    <pneu>
-      <largeur>10</largeur>
-      <hiver>false</hiver>
-      <hauteur>2</hauteur>
-      <marque>michlein</marque>
-    </pneu>
-    <pneu>
-      <largeur>10</largeur>
-      <hiver>false</hiver>
-      <hauteur>2</hauteur>
-      <marque>michlein</marque>
-    </pneu>
-    <pneu>
-      <largeur>10</largeur>
-      <hiver>false</hiver>
-      <hauteur>2</hauteur>
-      <marque>michlein</marque>
-    </pneu>
-  </voiture>
-    <voiture>
-    <marque>Ferari</marque>
-    <modele>model1</modele>
-    <moteur>939939</moteur>
-    <pneu>
-      <largeur>10</largeur>
-      <hiver>false</hiver>
-      <hauteur>2</hauteur>
-      <marque>michlein</marque>
-    </pneu>
-    <pneu>
-      <largeur>10</largeur>
-      <hiver>false</hiver>
-      <hauteur>2</hauteur>
-      <marque>michlein</marque>
-    </pneu>
-    <pneu>
-      <largeur>10</largeur>
-      <hiver>false</hiver>
-      <hauteur>2</hauteur>
-      <marque>michlein</marque>
-    </pneu>
-    <pneu>
-      <largeur>10</largeur>
-      <hiver>false</hiver>
-      <hauteur>2</hauteur>
-      <marque>michlein</marque>
-    </pneu>
-  </voiture>
-    <voiture>
-    <marque>Ferari</marque>
-    <modele>model1</modele>
-    <moteur>939939</moteur>
+    <modele>Qrt</modele>
+    <moteur>09876</moteur>
     <pneu>
       <largeur>10</largeur>
       <hiver>false</hiver>
@@ -118,7 +60,7 @@
   </voiture>
     <voiture>
     <marque>Mercedes</marque>
-    <modele>model2003</modele>
+    <modele>Benz</modele>
     <moteur>038874783</moteur>
     <pneu>
       <largeur>10</largeur>

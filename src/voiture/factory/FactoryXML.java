@@ -3,12 +3,12 @@ package voiture.factory;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
-import java.io.IOException;
+
 import org.jdom2.Document;
 import org.jdom2.Element;
-import org.jdom2.JDOMException;
 import org.jdom2.input.SAXBuilder;
-import voiture.impl.*;
+
+import voiture.impl.Voiture;
 
 /**
  * FactoryXml permet de d'ecrire une voiture a partir d'un fichier xml.

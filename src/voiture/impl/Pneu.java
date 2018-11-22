@@ -65,6 +65,9 @@ public class Pneu implements ElementVisitableVoiture {
     marque = newMarque;
   }
 
+  /**
+   * mehode toString().
+   */
   public String toString() {
 
     StringBuffer result = new StringBuffer();

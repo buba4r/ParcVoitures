@@ -12,11 +12,11 @@ public class VisiteurVoiture implements Visiteur {
     if (voiture == null) {
       throw new NullPointerException();
     }
-    Voiture vh = (Voiture) voiture;
+    Voiture vehicule = (Voiture) voiture;
 
-    System.out.println("Voiture: " + vh.getMarque() + " " + vh.getModele());
-    System.out.println("Moteur: " + vh.getMoteur());
-    System.out.println("Pneu: " + vh.getPneus());
+    System.out.println("Voiture: " + vehicule.getMarque() + " " + vehicule.getModele());
+    System.out.println("Moteur: " + vehicule.getMoteur());
+    System.out.println("Pneu: " + vehicule.getPneus());
 
     nombresVoitures++;
 
@@ -27,6 +27,7 @@ public class VisiteurVoiture implements Visiteur {
     if (unPneu == null) {
       throw new NullPointerException();
     }
+  
     System.out.println("Pneu: " + unPneu.toString());
 
   }

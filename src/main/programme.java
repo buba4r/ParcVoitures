@@ -1,8 +1,10 @@
 package main;
 
-import voiture.impl.*;
+import voiture.impl.Moteur;
+import voiture.impl.Pneu;
+import voiture.impl.Voiture;
 
-public class programme {
+public class Programme {
 
   /**
    * 

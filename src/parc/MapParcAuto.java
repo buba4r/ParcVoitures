@@ -3,6 +3,13 @@ package parc;
 import java.util.Collection;
 import java.util.Set;
 
+/**
+ * ...
+ * @author Boubacar.
+ *
+ * @param <Integer> ...
+ * @param <Voiture> ...
+ */
 public interface MapParcAuto<Integer, Voiture> {
   // creer un couple ('key','value') et le stocker dans la table
   Voiture ajouterOuModifierVoiture(Integer key, Voiture voiture);

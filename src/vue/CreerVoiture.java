@@ -7,20 +7,20 @@ import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 
 /**
- *
+ * class creerVoiture.
  * @author Boubacar DIALLO
  */
 @SuppressWarnings("serial")
 public class CreerVoiture extends javax.swing.JFrame implements Vue {
 
   /**
-   * Creates new form CreerVoiture
+   * Creates new form CreerVoiture.
    */
   GestionParkVoitures face;
 
   /**
-   * 
-   * @param facade
+   * ...
+   * @param facade la facade.
    */
   public CreerVoiture(GestionParkVoitures facade) {
     initComponents();

@@ -2,6 +2,13 @@ package parc;
 
 import java.util.Map.Entry;
 
+/**
+ * ...
+ * @author Boubacar
+ *
+ * @param <Integer> ...
+ * @param <Voiture> ...
+ */
 public class Couple<Integer, Voiture> implements Entry<Integer, Voiture> {
   Integer key;
   Voiture value;

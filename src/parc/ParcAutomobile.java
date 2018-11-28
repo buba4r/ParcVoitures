@@ -5,7 +5,6 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
-import parc.MapParcAuto.Entry;
 import voiture.impl.Voiture;
 
 /**
@@ -22,6 +21,7 @@ public class ParcAutomobile implements MapParcAuto<Integer, Voiture> {
     this.taille = capacity;
   }
 
+  @SuppressWarnings("unchecked")
   public ParcAutomobile() {
     this.taille = 100;
     listeVoitures = new Couple[taille];
@@ -29,7 +29,7 @@ public class ParcAutomobile implements MapParcAuto<Integer, Voiture> {
 
   /**
    * fonction permettant de retourner la position.
-   * @param key
+   * @param key la cle.
    * @return 
    */
   public int getPosition(Integer key) {
@@ -157,6 +157,7 @@ public class ParcAutomobile implements MapParcAuto<Integer, Voiture> {
     return false;
   }
 
+  @SuppressWarnings("unchecked")
   @Override
   public void clear() {
     listeVoitures = new Couple[taille];

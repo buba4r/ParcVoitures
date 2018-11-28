@@ -4,19 +4,19 @@ package vue;
 import facade.GestionParkVoitures;
 
 /**
- *
+ *class CreerVoitureInput.
  * @author Boubacar
  */
 public class CreerVoitureInput extends javax.swing.JFrame implements Vue {
 
   /**
-   * Creates new form CreerVoitureInput
+   * Creates new form CreerVoitureInput.
    */
   GestionParkVoitures facade;
 
   /**
-   * 
-   * @param facade
+   * constructeur.
+   * @param facade facade/
    */
   public CreerVoitureInput(GestionParkVoitures facade) {
     this.facade = facade;

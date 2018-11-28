@@ -49,13 +49,13 @@ public class GestionParkVoitures {
   /**
    * Creeation d'une voiture.
    * 
-   * @param marque
-   * @param model
-   * @param numeroSerie
-   * @param largeur
-   * @param hauteur
-   * @param marquePneu
-   * @param isHiver
+   * @param marque la marque du voiture
+   * @param model le model du voiture
+   * @param numeroSerie numero de serie
+   * @param largeur la largeur du pneu
+   * @param hauteur la hauteur du pneu
+   * @param marquePneu la marque du pneu
+   * @param isHiver type.
    */
   public void creerVoiture(String marque, String model, int numeroSerie,
       double largeur, double hauteur,String marquePneu, Boolean isHiver) {
@@ -69,9 +69,9 @@ public class GestionParkVoitures {
   }
 
   /**
-   * 
-   * @param key
-   * @param value
+   * ajouter ou modifier une voiture existante.
+   * @param key la cle
+   * @param voiture la valeur
    * @return
    */
   public Voiture ajouterOuModifierVoiture(Integer key, Voiture voiture) {
@@ -85,7 +85,7 @@ public class GestionParkVoitures {
    * permet d'indiquer que ta variable n'est pas modifiable. Ca gagne enprincipe
    * de la place en mémoire
    * 
-   * @param nomFichier
+   * @param nomFichier le nom du fichier.
    */
   public void creerVoitureApartirXml(final String nomFichier) {
     factoryXml.parseXml(nomFichier);
@@ -100,7 +100,7 @@ public class GestionParkVoitures {
   /**
    * la methode permet de supprimer une voiture a partir de son index.
    * 
-   * @param index
+   * @param index l'index
    */
   public void supprimerVoiture(Integer index) {
     this.voitures.remove(index);
@@ -152,6 +152,7 @@ public class GestionParkVoitures {
       visiteurVoiture.agitSur(voitureRecupere);
 
     }
+    this.notifyObserver();
 
   }
 
@@ -168,18 +169,19 @@ public class GestionParkVoitures {
       visiteurVoiture.agitSur(newVoiture);
 
     }
+    this.notifyObserver();
 
   }
 
   /**
    * changer les Pneux en fonction de l'emplacement.
    * 
-   * @param position
-   * @param marquePneu
-   * @param hauteur
-   * @param largeur
-   * @param isHiver
-   * @param voiture
+   * @param position la position
+   * @param marquePneu  la marque du pneu
+   * @param hauteur la hauteur du pneu
+   * @param largeur la largeur du pneu
+   * @param isHiver type du pneu
+   * @param voiture .
    */
   public void changerPneu(EmplacementRoues position, String marquePneu,
       double hauteur, double largeur, boolean isHiver,Voiture voiture) {

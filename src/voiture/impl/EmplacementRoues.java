@@ -1,7 +1,7 @@
 package voiture.impl;
 
 /**
- * 
+ * class Emplacement Roues.
  * @author Boubacar
  *
  */

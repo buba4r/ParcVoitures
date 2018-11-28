@@ -4,14 +4,14 @@ package vue;
 import facade.GestionParkVoitures;
 
 /**
- *
+ *programme main.
  * @author Boubacar DIALLO
  */
 public class Main {
 
   /**
-   * 
-   * @param args
+   *  main.
+   * @param args ..
    */
   public static void main(String... args) {
     GestionParkVoitures facade = new facade.GestionParkVoitures();

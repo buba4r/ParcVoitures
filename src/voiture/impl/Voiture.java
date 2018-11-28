@@ -17,7 +17,6 @@ import java.util.List;
 
 import visiteur.ElementVisitableVoiture;
 import visiteur.Visiteur;
-import visiteur.VisiteurVoiture;
 
 public class Voiture implements ElementVisitableVoiture {
 
@@ -73,10 +72,11 @@ public class Voiture implements ElementVisitableVoiture {
     this.pneus.add(pneu);
   }
   /**
+   * methode toString.
    * @return
    */
+  
   public String toString() {
-
     StringBuffer result = new StringBuffer("voiture : ");
     result.append("marque ");
     result.append(marque);

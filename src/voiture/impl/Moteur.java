@@ -15,8 +15,7 @@ package voiture.impl;
 import visiteur.ElementVisitableVoiture;
 import visiteur.Visiteur;
 
-public class Moteur implements ElementVisitableVoiture{
-
+public class Moteur implements ElementVisitableVoiture {
   protected static final int NUMERO_SERIE_EDEFAULT = 0;
   protected int numeroSerie = NUMERO_SERIE_EDEFAULT;
 
@@ -36,7 +35,7 @@ public class Moteur implements ElementVisitableVoiture{
     numeroSerie = newNumeroSerie;
   }
 
-  /**
+  /** methode toString.
    * @return 
    */
   public String toString() {

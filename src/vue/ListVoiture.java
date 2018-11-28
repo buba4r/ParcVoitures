@@ -8,7 +8,7 @@ import javax.swing.table.DefaultTableModel;
 import voiture.impl.Voiture;
 
 /**
- *
+ *class liste voiture.
  * @author Boubacar
  */
 public class ListVoiture extends javax.swing.JFrame implements Vue {
@@ -19,6 +19,10 @@ public class ListVoiture extends javax.swing.JFrame implements Vue {
   private GestionParkVoitures facade;
   DefaultTableModel modele;
 
+  /**
+   * constructeur.
+   * @param facade facade
+   */
   public ListVoiture(GestionParkVoitures facade) {
     this.facade = facade;
     facade.register(this);

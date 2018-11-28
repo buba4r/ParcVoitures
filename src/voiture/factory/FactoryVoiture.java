@@ -9,7 +9,7 @@ import voiture.impl.Voiture;
 
 
 /**
- * 
+ * class FactoryVoiture.
  * @author Boubacar
  *
  */
@@ -19,14 +19,15 @@ public class FactoryVoiture {
   static int nbVoiture = 0;
 
   /**
+ * methode creer voiture.
  * 
- * @param marque
- * @param model
- * @param numeroSerie
- * @param marquePneu
- * @param largeur
- * @param hauteur
- * @param isHiver
+ * @param marque la marque de la voiture.
+ * @param model  le model
+ * @param numeroSerie numero de serie
+ * @param marquePneu la marque du pneu
+ * @param largeur la  largeur du pneu
+ * @param hauteur la hauteur du pneu
+ * @param isHiver type.
  * @return
  */
   public Voiture creerVoiture(String marque, String model, int numeroSerie,
@@ -51,8 +52,8 @@ public class FactoryVoiture {
   }
 
   /**
-   * 
-   * @param listesVoitures
+   * lister les voitures.
+   * @param listesVoitures une liste des voitures.
    * @return
    */
   public List<Voiture> affichageVoitures(List<Voiture> listesVoitures) {

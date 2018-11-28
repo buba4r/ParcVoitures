@@ -1,7 +1,5 @@
 package main;
 
-import java.util.ArrayList;
-
 import visiteur.VisiteurVoiture;
 import voiture.impl.Moteur;
 import voiture.impl.Pneu;
@@ -10,9 +8,9 @@ import voiture.impl.Voiture;
 public class Prog2 {
 
   /**
-   * progamme main2
+   * progamme main2.
    * 
-   * @param args
+   * @param args ..
    */
   public static void main(String[] args) {
 

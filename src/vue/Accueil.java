@@ -1,23 +1,23 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package vue;
 
 import facade.GestionParkVoitures;
 
 /**
- *
- * @author elmoutaki
+ * class Acceuil.
+ * @author Boubacar
  */
 public class Accueil extends javax.swing.JFrame implements Vue {
 
   /**
-   * Creates new form Accueil
+   * Creates new form Accueil.
    */
   facade.GestionParkVoitures facade;
 
+  /**
+   * acceuil.
+   * @param facade la facade.
+   */
   public Accueil(facade.GestionParkVoitures facade) {
     this.facade = facade;
     facade.register(this);
@@ -61,7 +61,8 @@ public class Accueil extends javax.swing.JFrame implements Vue {
     jPanel1.add(jButton2);
     jButton2.setBounds(22, 76, 129, 29);
 
-    jLabel1.setIcon(new javax.swing.ImageIcon("/Users/lastking24/Downloads/parcImages/tesla-model-x.jpg")); // NOI18N
+    jLabel1.setIcon(new javax.swing.ImageIcon
+        ("/Users/lastking24/Downloads/parcImages/tesla-model-x.jpg")); // NOI18N
     jLabel1.setText("jLabel1");
     jPanel1.add(jLabel1);
     jLabel1.setBounds(-25, -66, 1015, 406);
@@ -69,11 +70,14 @@ public class Accueil extends javax.swing.JFrame implements Vue {
     javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
     getContentPane().setLayout(layout);
     layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup().addContainerGap()
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 696, Short.MAX_VALUE).addContainerGap()));
+        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING,
+            layout.createSequentialGroup().addContainerGap()
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE,
+                696, Short.MAX_VALUE).addContainerGap()));
     layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
         .addGroup(layout.createSequentialGroup().addGap(17, 17, 17)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 329, Short.MAX_VALUE).addContainerGap()));
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE,
+                329, Short.MAX_VALUE).addContainerGap()));
 
     pack();
   }// </editor-fold>//GEN-END:initComponents

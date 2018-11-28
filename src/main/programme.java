@@ -7,13 +7,13 @@ import voiture.impl.Voiture;
 public class Programme {
 
   /**
-   * 
-   * @param args
+   * main.
+   * @param args ...
    */
   public static void main(String[] args) {
 
     int nbVoitures = 0;
-
+    
     Voiture maVoiture = new Voiture();
     maVoiture.setMarque("Simca");
     maVoiture.setModele("1100");

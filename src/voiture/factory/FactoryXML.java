@@ -20,7 +20,9 @@ public class FactoryXml {
 
   List<Voiture> voitures;
   FactoryVoiture factoryVoiture;
+  @SuppressWarnings("unused")
   private String model;
+  @SuppressWarnings("unused")
   private String marque;
 
   /**
@@ -32,8 +34,8 @@ public class FactoryXml {
   }
 
   /**
-   * 
-   * @param fichier
+   *  parseXml.
+   * @param fichier un fichier xml.
    */
   public List<Voiture> parseXml(String fichier) {
 
@@ -50,6 +52,7 @@ public class FactoryXml {
       /* On récupère tous les élément classe du fichier XML */
       List<Element> liste = rootNode.getChildren("voiture");
       String largeur = null;
+      @SuppressWarnings("unused")
       Boolean hiver = null;
       String hauteur = null;
       String marquePneu = null;

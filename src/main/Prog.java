@@ -9,7 +9,7 @@ public class Prog {
   /**
    * programme Main.
    * 
-   * @param args
+   * @param args ..
    */
   public static void main(String[] args) {
 
